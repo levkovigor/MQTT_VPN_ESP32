@@ -1,4 +1,4 @@
-# MQTT_VPN
+# MQTT_VPN_ESP32
 VPN over MQTT
 
 The idea of this project is to enable bidirectional IP connectivity, where it is not available otherwise, e.g. if one node is hidden behind (several layers of) NAT. This is the case in most private networks and also in mobile IP networks. Prerequisite is, that all connected nodes can reach a common MQTT broker. This allows you to "dial-in" into an IoT device sitting anywhere in the internet.
