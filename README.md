@@ -13,6 +13,16 @@ With encryption in place, an adversary controlling the MQTT broker or the networ
 ## Linux
 
 This Linux version can communicate with the Arduino and the ESP32 version above. Run this prog in background and use all standard network tools (including wireshark).
+
+To build mqtt_vpn:
+```
+mkdir mqtt_vpn
+cd mqtt_vpn
+wget https://raw.githubusercontent.com/levkovigor/MQTT_VPN_ESP32/main/Makefile
+wget https://github.com/levkovigor/MQTT_VPN_ESP32/blob/main/mqtt_vpn.c
+make
+```
+
 If you start for example:
 ```
 sudo ./mqtt_vpn -i mq0 -a 10.0.1.1 -b tcp://my_broker.org:1883 -k secret -d
